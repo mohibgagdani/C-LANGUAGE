@@ -10,7 +10,19 @@ scanf("%f",&english);
 printf("enter the science marks : ");
 scanf("%f",&science);
 
-avg=(maths+english+science)/3;
+
+
+if (maths<0 && maths>100)
+{
+printf("enter valid number");
+}
+
+else
+{
+    avg=(maths+english+science)/3;
 printf("avg=%f \n",avg);
+}
+
+
 
 }
